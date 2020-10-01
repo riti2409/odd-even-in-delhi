@@ -1,25 +1,25 @@
 #include<iostream>
 using namespace std;
 int main() {
-	int no;
-	cin>>no;
-	for(int i=0;i<no;i++){
+	int no_of_times;
+	cin>>no_of_times;
+	for(int i=0;i<no_of_times;i++){
 		int n;
 		cin>>n;
 		int r;
-		int eans=0;
-		int oans=0;
+		int even_ans=0;
+		int odd_ans=0;
 		while(n>0){
 			r=n%10;
 		if(r%2==0){
-			 eans=eans+r;
+			 even_ans=even_ans+r;
 		}
 		else{
-			oans=oans+r;
+			odd_ans=odd_ans+r;
 		}
 		n=n/10;
 		}
-		if(eans%4==0 || oans%3==0){
+		if(even_ans%4==0 || odd_ans%3==0){
 			cout<<"Yes"<<endl;
 		}
 		else{
